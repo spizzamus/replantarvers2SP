@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
 *{
     box-sizing: border-box;
     margin: 0;
@@ -74,6 +75,32 @@ li a:hover {
 .encabezado2{
     display: flex;
 }
+.flex{
+    display: flex;
+    justify-content:center ;
+    }
+
+    .nombre {
+        display: flexbox ;
+        justify-content:center;
+    }
+
+    .container{
+        display: flexbox;
+        justify-content: center;
+    }
+body {
+        
+    background-color : #446f44;
+    font-size: 22px;
+    color : rgb(0, 0, 0);
+    background-image: url(../img/Grietas-en-suelo_-3.jpg);
+ 
+        background-repeat:no-repeat;
+        background-position:fixed;
+        background-size: cover;
+
+    }
 footer, .footer{ 
     background-color:#14150e;
     color:white;
