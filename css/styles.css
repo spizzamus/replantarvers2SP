@@ -1,5 +1,5 @@
 
-.barra_arriba{
+/* .barra_arriba{
     display:flexbox;
     color:rgb(209, 221, 231);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -7,74 +7,75 @@
     background-color: rgba(134, 96, 50, 0.782);
     text-align:right;
 }
-
-.ImgPrincipal{
+*/
+/* .ImgPrincipal{
     color:rgb(209, 221, 231);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size:3rem;
     background-color: rgba(134, 96, 50, 0.782);
     text-align:left;
 }
-.tituloMenu{
+*/
+/*
+ .tituloMenu{
     color:rgb(6, 40, 13);
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 2rem;
     text-align:center;
     background-color:rgb(203, 180, 146);
 }
+*/
 
-p.alineacion{
-    width: 85%;
-    max-width: 850px;
-    margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 2rem;
-}
 header{
     text-align: right;
-    background-color:#274427a6;
-    padding: 8px;
+    background-color:#274427;
+    padding: 10px;
     position: fixed;
     left: 0;
     top: 0;
     right: 0;
-}
+    }
 li{
-    display: inline;
+    display: inline; /*p/ q los links estén en línea, en vez de uno debajo de otro*/
 }
 ul {
     list-style-type: none;
-    font-family: Arial, Helvetica, sans-serif
-    
+    font-family: Arial, Helvetica, sans-serif; /*las podemos cambiar luego*/
   }
-
 li a {
     color: #D4A373;
     text-align: center;
     padding: 10px 10px;
     text-decoration: none;
      }
-li a:hover {
+li a:hover { /*esta clase es p/ q cuando le pasas el mouse por encima a los links se sombreen*/
     background-color: #305a30a6;
+    color: white;
     border-radius: 8px;
            }
 .encabezado2{
     display: grid;
-    row-gap: 5px;
-    flex-direction: column;
-    justify-content: center;
+    grid-template-columns: auto auto;
+    column-gap: 6rem; /*espacio entre columnas*/
+    justify-content: center;/*esto me ajusta la caja al contenido. La hace del tamaño del texto*/
     align-items: center;
+    
    }
-.encabezado2 > h2{
-    background-color: #305a30a6;
-    margin: 10px;
-    padding: 5px;
-    font-size: 12px;
+
+ .h2-quienessomos{
+    font-family:'Julius Sans One', sans-serif;
+    font-size: 40px; 
     text-align: center;
-    border-radius: 8px;
-}
+    margin-right: 5rem;
+ }   
+ .parrafo-nosotras{
+    font-family: 'Nanum Gothic', sans-serif; 
+    text-align: justify;
+    margin-right: 5rem;
+   }  
+
 footer, .footer{ 
-    background-color:#14150e;
+    background-color:black;
     color:white;
     text-align: center;
     margin-top: 1rem;
@@ -83,17 +84,19 @@ footer, .footer{
     margin-top: auto;
 }
 .logo{
-    float: left;  
-    width: 180px;
+    float: left;  /*esto me pone el logo a la izq*/
+    width: 180px; 
     height: 50px; 
 }
-.flex-container{
-    display: flex;
-}
+
 body{
-    padding-top: 6rem;
-    margin: 0;
+    margin: 0; /*es para que no haya margen entre el body y las otras cajas como el footer*/
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
+.flor_fondo{
+    width: 30rem;
+    opacity: 1; /*para darle transparencia a la imagen*/
+    
+    }
