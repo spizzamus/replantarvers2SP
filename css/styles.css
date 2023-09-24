@@ -49,7 +49,7 @@ header{
     display:flexbox;
     color:rgb(245, 246, 248);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 3rem;
+    font-size: 2rem;
     text-align:right;
     padding: 8px;
     /*left: 0;
@@ -57,12 +57,10 @@ header{
     right: 0;*/
 }
 .logo{
-    color:rgb(6, 40, 13);
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    float: left; 
-    /*padding: 8px;
+    float:left; 
+    padding: 2px;
     top: 0;
-    right: 0;*/
+    right: 0;
 }
 .subtitulo_arriba_imagen{
     display:inline-flex;
@@ -99,15 +97,15 @@ header{
     display:flex;
     flex-direction: column;
 }
-/*
+
 ul{
-    display:flexbox;
+    list-style-type: none;
     color:rgb(209, 221, 231);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 3rem;
-    background-color: rgba(134, 96, 50, 0.782);
     text-align:right;
-}*/
+}
+/*
 .footer_abajo{
     color:white;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -134,10 +132,10 @@ ul{
 }
 */
 
-/*
 li{
     display: inline;
 }
+/*
 ul {
     list-style-type: none;
     margin: 0;
