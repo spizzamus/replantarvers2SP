@@ -3,7 +3,7 @@
 
 <head>
   <!-- <link rel="stylesheet" href="../css/styles.css"> -->
-  <link rel="stylesheet" href="../css/styles2.css"> <!--revisar acá cuál es la página de css correspondiente-->
+  <link rel="stylesheet" href="../css/styles.css"> <!--revisar acá cuál es la página de css correspondiente-->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RePlantear</title>
@@ -13,85 +13,64 @@
 
 <body>
 <!-- aca empieza -->
-  <body>
-  <div class="grid-container">
-      
-    <div class="caja_arriba1">
-        <header class="barra_arriba">
-          <div class="logo"><img src="../img/logo1.png" alt="LOGO"></div>
-          <navbar>
+<body class="grid-container"> <!--armé todo el body con grid template areas para que quede "prolijo" (ponele)-->
+  
+  <header> <!--esta caja, header, incluye tanto el menú arriba a la derecha como el logo replantear.--> 
+  
+    <navbar class="caja_arriba1"><!--esto es el menú  arriba -->
             <a href="#nosotras">Nosotras </a>
             <a href="#contacto">Contacto </a>
             <a href="#dejanos_tu_tip">Dejanos tu tip</a>
-            <!-- acá-bah, en css pero que se corresponda con esta parte- ver cómo hacer el header con nosotras, contacto, etc, 
-              que sea sticky y que sean cajas contiguas. Seguramente un flexbox. -->
- 
-              <div class="titulo_arriba">
-                <header class="titulo">
-                  <h1>RePlantear</h1>
-                </header>
-              </div>
+    </navbar> 
+   <div class="logo"><!--este es el logo Replantear-->
+    <img src="../img/logo1.png" alt="LOGO" width="120%" height="80%"></div>   
 
-              <div class="subtitulo_arriba_imagen">
-                <div class="ImgPrincipal">
-                  <h2> Para plasmar tus proyectos vegetales en tierra firme </h2>
-                  <img src="../img/fittonia-1458809_1280.jpg" foto de plantas width="50%" height="40%" alt="imagen de plantas">
-                </div>
-              </div>  
+  </header>
 
-              <div class="titulo_menu">
-                <h2 class="tituloMenu">¿En qué te podemos ayudar?</h2>
-              </div>
-        
-          </navbar>
-        </header>
-      </div>
-      <div class="menu_izq">
-        <div class="responsive">
-          <div class="gallery">
-            <a target="_blank" href="../Replantear/Identificador_de_plantas.html">
-              <img src="../img/free-photo-of-flores-pared-planta-hojas.jpeg" alt="Identificador_de_plantas" width="600"
-                height="400">
-            </a>
-            <div class="desc">Utilizá nuestro buscador para saber de tu planta y sus ancestros: cuanto más sabés, mejor!
-            </div>
+  <div class="subtitulo_arriba_imagen"><!--acá está el subtítulo principal y la foto principal-->
+    <h2> Para plasmar tus proyectos vegetales en tierra firme </h2>
+      <img src="../img/fittonia-1458809_1280.jpg" foto de plantas width="50%" height="40%" alt="imagen de plantas">
+  </div>  
+
+  <div class="titulo_menu"><!--acá está el título de cosas que se pueden hacer en la página-->
+    <h2>¿En qué te podemos ayudar?</h2>
+  </div>
+   
+  
+  <div class="trio"><!--acá está el menú de cosas que se pueden hacer-->
+
+        <div class="menu_izq"><!--esta es la primera opcion del menu con foto-->
+          <a target="_blank" href="../Replantear/Identificador_de_plantas.html">
+          <img src="../img/free-photo-of-flores-pared-planta-hojas.jpeg" alt="Identificador_de_plantas" width="600"
+            height="400"> </a>
+          <div class="descripcion">Utilizá nuestro buscador para saber de tu planta y sus ancestros: cuanto más sabés, mejor!
           </div>
         </div>
-      </div>
-      <div class="menu_centro">
-        <div class="responsive">
-          <div class="gallery">
-            <a target="_blank" href="../Replantear/Houston_problemas_plantas.html">
-              <img src="../img/caterpillar-5810616_1280.jpg" alt="problemas" width="600" height="400">
-            </a>
-            <div class="desc">La luz, el suelo, el agua, los bichos y muchas otras cosas pueden ser un obstáculo en la salud
-              de tu planta.</div>
+
+        <div class="menu_centro"><!--esta es la opcion del medio del menú con foto-->
+          <a target="_blank" href="../Replantear/Houston_problemas_plantas.html">
+          <img src="../img/caterpillar-5810616_1280.jpg" alt="problemas" width="600" height="400"></a>
+          <div class="descripcion">La luz, el suelo, el agua, los bichos y muchas otras cosas pueden ser un obstáculo en la salud
+          de tu planta.
           </div>
         </div>
-    
-      </div>  
-      <div class="menu_der">
-        <div class="responsive">
-          <div class="gallery">
-            <a target="_blank" href="../Replantear/clasificacion_plantas_domesticas.html">
-              <img src="../img/greenhouse-6226263_1280.jpg" alt="links_utiles" width="600" height="400">
-            </a>
-            <div class="desc">Vení a conocer otras grandes ayudas para la salud de tus plantitas</div>
+
+        <div class="menu_der"><!--esta es la última opción del menú con foto-->
+          <a target="_blank" href="../Replantear/clasificacion_plantas_domesticas.html">
+          <img src="../img/greenhouse-6226263_1280.jpg" alt="links_utiles" width="600" height="400"></a>
+          <div class="descripcion">Vení a conocer otras grandes ayudas para la salud de tus plantitas.
           </div>
         </div>
-      </div>
-      <div class="footer_abajo">
-        <footer>
+  </div>
+
+        <footer class="footer_abajo"> <!--este es el footer-->
           <i class="fa-brands fa-facebook"></i>
           <i class="fa-brands fa-instagram"></i>
           <i class="fa-brands fa-whatsapp"></i>
           <p class="footer"> &#169 Todos los derechos reservados 2023<br>
-              Programado por Josefina Moreno, Carina Rodrigues, Luciana Poggio y Sofia Pizamus</p>
+              Programado por Josefina Moreno, Carina Rodrigues, Luciana Poggio y Sofia Pizzamus</p>
         </footer>
-      </div>
-   
-    </div>
-    
+     
     </body>
     </html>
     <!-- esto que está acá abajo no sé dónde ponerlo... por ahí no haga falta esta lista 
