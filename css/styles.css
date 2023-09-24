@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
 /* hoja solo para probar grid. Esto primero que dice box sizing, margin, padding es para poner por defecto a 0. */
 *{
     box-sizing: border-box;
@@ -51,7 +51,7 @@ header{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 3rem;
     text-align:right;
-    background-color:black;
+    background-color: rgba(134, 96, 50, 0.782);
     padding: 8px;
     /*left: 0;
     top: 0;
@@ -60,7 +60,7 @@ header{
 .logo{
     color:rgb(6, 40, 13);
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color:black;
+    background-color:rgb(203, 180, 146);;
     float: left; 
     /*padding: 8px;
     top: 0;
@@ -77,7 +77,7 @@ header{
 .titulo_menu{
     color:rgb(6, 40, 13);
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 3rem;
+    font-size: 2rem;
     text-align:center;
     background-color:rgb(203, 180, 146);
 }
