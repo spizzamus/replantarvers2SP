@@ -135,6 +135,15 @@ ul{
 li{
     display: inline;
 }
+li a {
+    color: #D4A373;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+     }
+li a:hover {
+    background-color: #305a30a6;
+           }
 /*
 ul {
     list-style-type: none;
@@ -148,20 +157,10 @@ ul {
     background-color: rgba(134, 96, 50, 0.782);
     text-align:right;
     }
-
-li a {
-    color: #D4A373;
-    text-align: center;
-    padding: 20px 16px;
-    text-decoration: none;
-     }
-li a:hover {
-    background-color: #305a30a6;
-           }*/
 .encabezado2{
     display: flex;
 }
-
+*/
 
 
 /*acá termina lo de la hoja de styles, ver qué pasa que se descuajeringa todo cuando lo junto*/
