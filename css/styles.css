@@ -18,12 +18,18 @@
     .grid-container {
       display: grid;
       grid-template-areas:
+      'header header header'
+      'foter foter foter'
+      'titu titu titu'
+      'menu main right'
+      'footer footer footer';
+      /* no sé qué organización es mejor, pero me parece que con esta estamos bien (la de arriba que es más simple)
       'header header header header header header'
       'foter foter foter foter foter foter'
       'titu titu titu titu titu titu'
       'menu menu main main right right'
-      'footer footer footer footer footer footer';
-      grid-gap: 1px;
+      'footer footer footer footer footer footer';*/
+      grid-gap: 0px;
       background-color: #c0f6f6;
       padding: 1px;
     }
@@ -80,6 +86,8 @@ header{
 .trio{
     display:flex;
     flex-direction: row;
+    padding: 1rem;
+
 }
 
 .menu_izq{
@@ -120,7 +128,7 @@ ul{
     font-family:"Montserrat", Georgia, 'Times New Roman', Times, serif;
     font-size:1rem;
     text-align:justify;
-    background-color:rgba(5, 137, 67, 0.729);
+    background-color:rgba(134, 96, 50, 0.782);
     padding:3rem;
 }
 /*acá empieza lo que copio de la hoja de styles*/
