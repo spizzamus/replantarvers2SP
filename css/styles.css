@@ -55,7 +55,21 @@ li a:hover { /*esta clase es p/ q cuando le pasas el mouse por encima a los link
     border-radius: 8px;
            }
 .encabezado2{
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 6rem;
+    justify-content: center;
+    }
+.h2-quienessomos{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-right: 5rem;
+}
+.parrafo-nosotras{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: justify;
+    margin-right: 5rem;
 }
 footer, .footer{ 
     background-color:black;
@@ -78,8 +92,7 @@ body{
     flex-direction: column;
     min-height: 100vh;
 }
-.flor_fondo{
+.imagenNosotras{
     width: 30rem;
     opacity: 1; /*para darle transparencia a la imagen*/
-    
     }
