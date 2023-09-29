@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
-/* hoja solo para probar grid. Esto primero que dice box sizing, margin, padding es para poner por defecto a 0. */
+/* hoja para probar grid. Esto primero que dice box sizing, margin, padding es para poner por defecto a 0. */
 *{
     box-sizing: border-box;
     margin: 0;
