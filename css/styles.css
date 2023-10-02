@@ -118,9 +118,9 @@ footer, .footer{
 }
 .descripcion{
     display:inline-block;
-    color:brown;
+    color:rgb(102, 28, 28);
     font-family:"Montserrat", Georgia, 'Times New Roman', Times, serif;
-    font-size:2rem;
+    font-size:1.5rem;
     text-align:justify;
     background-color:rgba(134, 96, 50, 0.782);
     padding:3rem;
