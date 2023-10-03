@@ -46,17 +46,6 @@ header{
     top: 0;
     right: 0;
 }
-.caja_arriba1{
-    display:flexbox;
-    color:rgb(245, 246, 248);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 2rem;
-    text-align:right;
-    padding: 8px;
-    /*left: 0;
-    top: 0;
-    right: 0;*/
-}
 .logo{
     float:left; 
     width: 180px;
@@ -147,7 +136,7 @@ li a:hover {
     background-color: #305a30a6;
     border-radius:8px;
            }
-/*
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -163,4 +152,4 @@ ul {
 .encabezado2{
     display: flex;
 }
-*/
+
