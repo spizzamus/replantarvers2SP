@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
-/* hoja para probar grid. Esto primero que dice box sizing, margin, padding es para poner por defecto a 0. */
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+
+
 .grid-container{
     /* aca empieza */
     .header{ grid-area: header; }
@@ -39,18 +35,20 @@
 }
 header{
     text-align: right;
-    background-color:#274427a6;
-    padding: 8px;
-    position:fixed; /*revisar este fixed en función de la parte de abajo*/
+    background-color:#274427;
+    padding: 10px;
+    position: fixed;
     left: 0;
     top: 0;
     right: 0;
 }
+
 .logo{
-    float:left; 
-    width: 180px;
+    float: left;  /*esto me pone el logo a la izq*/
+    width: 180px; 
     height: 50px; 
 }
+
 .subtitulo_arriba_imagen{
     display:inline-flex;
     color:rgb(12, 51, 38);
@@ -88,23 +86,33 @@ header{
     display:flex;
     flex-direction: column;
 }
-
-ul{
+ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20pt;
+    display:flexbox;
     color:rgb(209, 221, 231);
-    font-family: Arial, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 2rem;
     text-align:right;
-}
-footer, .footer{ 
-    background-color:#14150e;
+    }
+
+ul {
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif; /*las podemos cambiar luego*/
+  }
+  footer, .footer{ 
+    background-color:black;
     color:white;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
     margin-top: 1rem;
     padding: 1.5rem;
     bottom: 0;
     margin-top: auto;
 }
+
 .descripcion{
     display:inline-block;
     color:rgb(102, 28, 28);
@@ -124,32 +132,48 @@ p.alineacion{
 }
 
 li{
-    display: inline;
+    display: inline; /*p/ q los links estén en línea, en vez de uno debajo de otro*/
 }
+
 li a {
     color: #D4A373;
     text-align: center;
     padding: 10px 10px;
     text-decoration: none;
      }
-li a:hover {
-    background-color: #305a30a6;
-    border-radius:8px;
-           }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 20pt;
-    display:flexbox;
-    color:rgb(209, 221, 231);
-    background-color: rgba(134, 96, 50, 0.782);
-    text-align:right;
+li a:hover { /*esta clase es p/ q cuando le pasas el mouse por encima a los links se sombreen*/
+    background-color: #305a30a6;
+    color: white;
+    border-radius: 8px;
+ }
+
+ .encabezado2{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 6rem;
+    justify-content: center;
     }
-.encabezado2{
+.h2-quienessomos{
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 40px;
+     text-align: center;
+     margin-right: 5rem;
+    padding-top: 6rem;
+    }
+ .parrafo-nosotras{
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    font-size: 18px;
+    margin-right: 5rem;
+ }  
+ body{
+    margin: 0; /*es para que no haya margen entre el body y las otras cajas como el footer*/
     display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
+.imagenNosotras{
+    width: 30rem;
+    }  
 
