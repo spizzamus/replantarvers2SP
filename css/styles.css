@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
 
-
 .grid-container{
     /* aca empieza */
     .header{ grid-area: header; }
@@ -25,6 +24,7 @@
     }
     
     .grid-container > div {
+
       background-color: rgba(134, 96, 50, 0.782);
       text-align: center;
       /* padding: 20px 0; */
@@ -50,6 +50,7 @@ header{
 }
 
 .subtitulo_arriba_imagen{
+
     display:inline-flex;
     color:rgb(12, 51, 38);
     font-family: "Montserrat",'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -70,7 +71,48 @@ header{
     padding: 1rem;
     font-size: 24px;   
 }
-
+.menu_izq{
+    background-color:beige;
+    display:flex;
+    flex-direction: column;
+}
+.menu_centro{
+    background-color:beige;
+    display:flex;
+    flex-direction: column;
+}
+.menu_der{
+    background-color:beige;
+    display:flex;
+    flex-direction: column;
+ }
+.logo{
+        float: left;  /*esto me pone el logo a la izq*/
+        width: 180px; 
+        height: 50px; 
+ }
+ /*ACÁ comienzan estilos para el index*/
+ .subtitulo_arriba_imagen{
+    display:inline-flex;
+    color:rgb(12, 51, 38);
+    font-family: "Montserrat",'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:3rem;
+    background-color: rgba(54, 138, 100, 0.666);
+    align-items: end;
+    padding:2rem;
+}
+.titulo_menu{
+    color:rgb(6, 40, 13);
+    font-family:"Montserrat",'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    text-align:center;
+    background-color:rgba(134, 96, 50, 0.782);
+}
+.trio{
+    display:inline-flex;
+    padding: 1rem;
+    font-size: 24px;   
+}
 .menu_izq{
     background-color:beige;
     display:flex;
@@ -86,13 +128,22 @@ header{
     display:flex;
     flex-direction: column;
 }
+.descripcion{
+    display:inline-block;
+    color:rgb(102, 28, 28);
+    font-family:"Montserrat", Georgia, 'Times New Roman', Times, serif;
+    font-size:1.5rem;
+    text-align:justify;
+    background-color:rgba(134, 96, 50, 0.782);
+    padding:3rem;
+}/*ACÁ TERMINAN estilos para el index*/
+/*ESTO ES PARA EL HEADER, PARA LA BARRA DE NAVEGACIÓN CON LINKS*/
+li{
+    display: inline; /*p/ q los links estén en línea, en vez de uno debajo de otro*/
+}
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 20pt;
+    font-family: 'Montserrat', sans-serif; /*las podemos cambiar luego*/
     display:flexbox;
     color:rgb(209, 221, 231);
     text-align:right;
@@ -134,15 +185,13 @@ p.alineacion{
 li{
     display: inline; /*p/ q los links estén en línea, en vez de uno debajo de otro*/
 }
-
 li a {
     color: #D4A373;
     text-align: center;
     padding: 10px 10px;
     text-decoration: none;
      }
-
-li a:hover { /*esta clase es p/ q cuando le pasas el mouse por encima a los links se sombreen*/
+li a:hover {
     background-color: #305a30a6;
     color: white;
     border-radius: 8px;
