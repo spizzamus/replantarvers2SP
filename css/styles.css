@@ -9,7 +9,7 @@
     .menu_centro { grid-area: main; }
     .menu_der { grid-area: right; }
     .footer { grid-area: footer; }
-
+   
     .grid-container {
       display: grid;
       grid-template-areas:
@@ -22,7 +22,7 @@
       background-color: #c0f6f6;
       padding: 1px;
     }
-
+    
     .grid-container > div {
       background-color: rgba(134, 96, 50, 0.782);
       text-align: center;
@@ -32,7 +32,6 @@
     }
     /* aca termina el grid*/
 }
-
 header{
     text-align: right;
     background-color:#274427;
@@ -41,9 +40,8 @@ header{
     left: 0;
     top: 0;
     right: 0;
-    }
-
-    .logo{
+ }
+.logo{
         float: left;  /*esto me pone el logo a la izq*/
         width: 180px; 
         height: 50px; 
@@ -95,27 +93,24 @@ header{
     padding:3rem;
 }/*ACÁ TERMINAN estilos para el index*/
 /*ESTO ES PARA EL HEADER, PARA LA BARRA DE NAVEGACIÓN CON LINKS*/
-
 li{
     display: inline; /*p/ q los links estén en línea, en vez de uno debajo de otro*/
 }
-
 ul {
     list-style-type: none;
-    font-family: 'Montserrat', sans-serif; /*las podemos cambiar luego*/ }
-
-  li a {
+    font-family: 'Montserrat', sans-serif; /*las podemos cambiar luego*/
+  }
+li a {
     color: #D4A373;
     text-align: center;
     padding: 10px 10px;
-    text-decoration: none;}
-
-     li a:hover {
-        background-color: #305a30a6;
-        color: white;
-        border-radius: 8px;}
-        /*acá termina barra de navegación*/
-
+    text-decoration: none;
+}
+li a:hover { /*esta clase es p/ q cuando le pasas el mouse por encima a los links se sombreen*/
+    background-color: #305a30a6;
+    color: white;
+    border-radius: 8px;
+} /*acá termina barra de navegación*/
 /*ACÁ empiezan estilos para el body de "NOSOTRAS"*/
 .encabezado2{
     display: grid;
@@ -134,56 +129,11 @@ ul {
     font-family: 'Montserrat', sans-serif;
     text-align: justify;
     font-size: 18px;
-    margin-right: 5rem; }
-
+    margin-right: 5rem;
+} 
 .imagenNosotras{
     width: 30rem;
-}
-/*ACÁ TERMINAN estilos para "NOSOTRAS"*/
-
- /* .encabezado2{
-    display: grid;
-    row-gap: 5px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-   }
-
-.encabezado2 > h2{
-    background-color: #305a30a6;
-    margin: 10px;
-    padding: 5px;
-    font-size: 12px;
-    text-align: center;
-    border-radius: 8px;
-}
-.flex{
-    background-color: #305a30a6;
-    margin: 10px;
-    padding: 5px;
-    font-size: 12px;
-    text-align: center;
-    }
-
-    .nombre {
-        display: flexbox ;
-        justify-content:center;
-    }
-
-    .container{
-        display: flexbox;
-        justify-content: center;
-    }
-
-        
-body{
-        padding-top: 6rem;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-    }*/
-
+}/*ACÁ TERMINAN estilos para "NOSOTRAS"*/
 footer, .footer{ 
     background-color:black;
     color:white;
@@ -194,7 +144,6 @@ footer, .footer{
     bottom: 0;
     margin-top: auto;
 }
-
 body{
     margin: 0; /*es para que no haya margen entre el body y las otras cajas como el footer*/
     display: flex;

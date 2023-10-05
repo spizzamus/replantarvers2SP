@@ -1,71 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <link rel="shortcut icon" href="../img/greenhouse-6226263_1280.jpg" type="image/x-icon">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
         <title>RePlantear</title>
+
         <link rel="stylesheet" href="../css/styles.css">
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
     
+        <script src="https://kit.fontawesome.com/3b21fc997b.js" crossorigin="anonymous"></script>
+        
     </head>
 
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Nanum+Gothic&display=swap');
+        
         .flex{
             display: flex;
             justify-content:center ;
-            background-color: #446f44c0;
+            background-color: rgba(134, 96, 50, 0.782);
         }
 
-        .nombre {
-            display: flexbox ;
-            justify-content:center;
-        }
+       
 
-        .container{
-            display: flexbox;
-            justify-content: center;
-        }
-
-        a{
-            color:rgb(0, 0, 0);
-            font-size: 1rem;
-
-        } 
-        ul{ 
-            background-color: #446f44c0;
-            font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
-        }
-
-        p {
-             font-size : 12pt;
-             font-family : Montserrat, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            font-weight : normal;
-            text-align : center;
-        }
-                
-        h1 {
-                
-            font-size : 40pt;
-            color: black;
-            font-family : 'Montserrat', 'Arial Narrow', Arial, sans-serif;
-            text-align : center;
-            background-color:rgba(134, 96, 50, 0.782);
-          }
-                
-        h2{
-            font-size: 22pt;
-            color: black;
-            font-family: Montserrat, Geneva, Tahoma, sans-serif; 
-            text-align : center;
-        }
-
-        h3{
-            font-size: 10pt;
-            color: black;
-            font-family: Montserrat, Geneva, Tahoma, sans-serif; 
-            text-align : center;
-        } 
+        
         div.gallery {
                 border: 1px solid #ccc;
                 }
@@ -79,25 +40,21 @@
                 height: auto;
                 }
 
-                div.desc {
-                padding: 15px;
-                text-align: center;
-                }
-
+        
                 * {
                 box-sizing: border-box;
                 }
 
                 .responsive {
-                padding: 0 6px;
-                float: left;
-                width: 24.99999%;
+                padding: 6px;
+                float:left;
+                width: 32%;
                 }
 
                     @media only screen and (max-width: 700px) {
                     .responsive {
                         width: 49.99999%;
-                        margin: 6px 0;
+                        margin: 15px 0;
                     }
                     }
 
@@ -118,11 +75,11 @@
 
     <header>
         <script src="https://kit.fontawesome.com/3b21fc997b.js" crossorigin="anonymous"></script>
-        <img src="../img/LOGO.png" class="logo" alt="LOGO">
+        <img src="../img/logo1.png" class="logo" alt="LOGO">
        
     <ul>
         <li><a href="index.html">Inicio</a></li>
-        <li><a href="Contacto.html">Contacto</a></li>
+        <li><a href="formulario-de-contacto.html">Contacto</a></li>
         <li><a href="nosotras.html">Nosotras</a></li>
         <li><a href="tips.html">Tips comunidad</a></li>
     </ul>
@@ -130,25 +87,36 @@
 
     <body>
 <main>
-    <h1>TIPS COMUNIDAD</h1>
-        <h1 class="encabezado2">Compartinos tu tip para aprender juntos!</h1>
-        <p>Dejanos tu comentario aquí para compartir a la comunidad todos esos tips que te siriveron para tu jardín o balcón!</p>
+        
+    
+        <div class="encabezado2">
+            
+        </div>
+        <h2 class="h2-quienessomos">Compartinos tu tip para aprender juntos!</h2>
+        <p class="parrafo-nosotras">Dejanos tu comentario aquí para compartir a la comunidad todos esos tips que te siriveron para tu jardín o balcón!</p>
         
         <div class="flex">
             
             <form action="sofiapizzamus@gmail.com">
                 <label for="inputNombre">Nombre:</label>
+                <br>
                 <input type="text" id="inputNombre">
                 <br>
                 <label for="inputApellido">Apellido:</label>
+                <br>
                 <input type="text" id="inputApellido">
                 <br>
-                <label for="textAreaMensaje">Mensaje:</label>
+                <label for="textAreaMensaje">Contanos cuál es tu tip</label>
+                <br>
                 <textarea name="textAreaMensaje" id="" cols="30" rows="10"></textarea>
                 <br>
                 <input type="submit" value="Enviar comentarios..">
                 <input type="reset" value="Borrar todo..">
+                
             </form>
+            <div>
+                <img src="../img/caterpillar-5810616_1280.jpg" class="imagenNosotras" alt="imgTips">
+            </div>  
         </div>
         <!-- ADENTRO DE STYLE           div.gallery {
                 display: grid;
@@ -170,30 +138,30 @@
             }
         -->
                                   
-
-            </head>
+      
+           
             <body>
-                <h1>Ustedes</h1>
-            <div class="responsive">
+                <h2 class="h2-quienessomos">Ustedes</h2>
+            
+                <div class="responsive">
                 <div class="gallery">
                 <a target="_blank" href="../img/1.jpg">
-                    <img src="../img/1.jpg" alt="Diego - Tandil" width="600" height="400">
+                    <img src="../img/1.jpg" alt="DiegoTandil" width="600" height="400">
                 </a>
             </div>
                 </div>
                 
-                <div class="responsive">
-                <div class="gallery">
+            
                 <a target="_blank" href="../img/2.jpg">
-                    <img src="../img/2.jpg" alt="Forest" width="600" height="400">
+                    <img src="../img/2.jpg" alt="ElenaCordoba" width="600" height="400">
                 </a>
                 </div>
                 </div>
                
-                <div class="responsive">
+                <div class="responsive"> 
                 <div class="gallery">
                 <a target="_blank" href="../img/3.jpg">
-                    <img src="../img/3.jpg" alt="Northern Lights" width="600" height="400">
+                    <img src="../img/3.jpg" alt="JazminOlavarria" width="600" height="400">
                 </a>
                 </div>
                 </div>
@@ -238,7 +206,7 @@
                     </div>
                 </div>
             </div>
-            <div class="clearfix"></div>
+            
     </main>
 
         <div class="flex">
