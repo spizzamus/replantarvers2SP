@@ -1,68 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  !-- <link rel="stylesheet" href="../css/styles.css"> -->
+  <!-- <link rel="stylesheet" href="../css/styles.css"> -->
   <link rel="stylesheet" href="../css/styles.css"> <!--revisar acá cuál es la página de css correspondiente-->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RePlantear</title>
-  <link rel="shortcut icon" href=""><!--alguien sabe qué es esto??? porque no sé si quedó de algun script de página o qué-->
+  <link rel="shortcut icon" href="../img/favicon.ico"><!--alguien sabe qué es esto??? porque no sé si quedó de algun script de página o qué-->
 </head>
-
 <body>
-    <header><!-- aca empieza -->
-      <body class="grid-container"> <!--armé todo el body con grid template areas para que quede "prolijo" (ponele)-->
-      
-        <header> <!--esta caja, header, incluye tanto el menú arriba a la derecha como el logo replantear.--> 
-      
-            <ul class="caja_arriba1"><!--esto es el menú arriba-->
-              <li><a href="nosotras.html">Nosotras</a></li>
-              <li><a href="formulario-de-contacto.html">Contacto</a></li>
-              <li><a href="dejanos_tu_tip.html">Dejanos tu tip</a></li>
-          </ul>
-          <div class="logo"><!--este es el logo Replantear-->
-            <img src="../img/logo1.png" alt="LOGO"></div>   
-          </header> 
-    
-          <div class="titulo_menu"><!--acá está el título de cosas que se pueden hacer en la página-->
-            <h2>¿En qué te podemos ayudar?</h2>
+<!-- aca empieza -->
+<body class="grid-container"> <!--armé todo el body con grid template areas para que quede "prolijo" (ponele)-->
+  
+  <header class="caja_arriba1"> 
+    <a href="index.html"><img src="../img/logo1.png" class="logo" alt="LOGO"></a> 
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="formulario-de-contacto.html">Contacto</a></li>
+        <li><a href="nosotras.html">Nosotras</a></li>
+        <li><a href="tips.html">Tips comunidad</a></li>
+    </ul>      
+  </header>
+
+  <div class="subtitulo_arriba_imagen"><!--acá está el subtítulo principal y la foto principal-->
+    <h2> Para plasmar tus proyectos vegetales en tierra firme </h2>
+      <img src="../img/sanseviera-8231643_1280.jpg" foto de plantas width="50%" height="40%" alt="imagen de plantas">
+  </div>  
+
+  <div class="titulo_menu"><!--acá está el título de cosas que se pueden hacer en la página-->
+    <h2>¿En qué te podemos ayudar?</h2>
+  </div>
+   
+  
+  <div class="trio"><!--acá está el menú de cosas que se pueden hacer-->
+
+        <div class="menu_izq"><!--esta es la primera opcion del menu con foto-->
+          <a title="identificador" href="../Replantear/Identificador_de_plantas.html">
+          <img src="../img/flower-2566774_1280.jpg" alt="Identificador_de_plantas" width="600"
+            height="400"> </a>
+          <div class="descripcion">Utilizá nuestro buscador para saber de tu planta y sus ancestros: cuanto más sabés, mejor!
           </div>
-          <div class="trio"><!--acá está el menú de cosas que se pueden hacer-->
+        </div>
 
-            <div class="menu_izq"><!--esta es la primera opcion del menu con foto-->
-              <a title="identificador" href="../Replantear/Identificador_de_plantas.html">
-              <img src="../img/flower-2566774_1280.jpg" alt="Identificador_de_plantas" width="600"
-                height="400"> </a>
-              <div class="descripcion">Utilizá nuestro buscador para saber de tu planta y sus ancestros: cuanto más sabés, mejor!
-              </div>
-            </div>
-    
-            <div class="menu_centro"><!--esta es la opcion del medio del menú con foto-->
-              <a title="problemas" href="../Replantear/Houston_problemas_plantas.html">
-              <img src="../img/snail-5842411_1280.jpg" alt="problemas" width="600" height="400"></a>
-              <div class="descripcion">La luz, el suelo, el agua, los bichos y muchas otras cosas pueden ser un obstáculo en la salud
-              de tu planta.
-              </div>
-            </div>
+        <div class="menu_centro"><!--esta es la opcion del medio del menú con foto-->
+          <a title="problemas" href="../Replantear/Houston_problemas_plantas.html">
+          <img src="../img/snail-5842411_1280.jpg" alt="problemas" width="600" height="400"></a>
+          <div class="descripcion">La luz, el suelo, el agua, los bichos y muchas otras cosas pueden ser un obstáculo en la salud
+          de tu planta.
+          </div>
+        </div>
 
-            <footer class="footer_abajo"> <!--este es el footer-->
-              <i class="fa-brands fa-facebook"></i>
-              <i class="fa-brands fa-instagram"></i>
-              <i class="fa-brands fa-whatsapp"></i>
-              <p class="footer"> &#169 Todos los derechos reservados 2023<br>
-                  Programado por Josefina Moreno, Carina Rodrigues, Luciana Poggio y Sofia Pizzamus</p>
-            </footer>
-    
-        </body>
-        </html>
-        <!-- esto que está acá abajo no sé dónde ponerlo... por ahí no haga falta esta lista 
-          y directamente nos manejemos con los menúes de foto 
-          <ul> 
+        <div class="menu_der"><!--esta es la última opción del menú con foto-->
+          <a title="Links" href="../pages/tips.html">
+          <img src="../img/garden-1176406_1280.jpg" alt="links_utiles" width="600" height="400"></a>
+          <div class="descripcion">Vení a conocer otras grandes ayudas para la salud de tus plantitas.
+          </div>
+        </div>
+  </div>
 
-                <li><a href="Identificador_de_plantas.html"> Identificador de plantas</a></li>
+        <footer class="footer"> <!--este es el footer-->
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-whatsapp"></i>
+          <p class="footer"> &#169 Todos los derechos reservados 2023<br>
+              Programado por Josefina Moreno, Carina Rodrigues, Luciana Poggio y Sofia Pizzamus</p>
+        </footer>
+     
+    </body>
+    </html>
+    <!-- esto que está acá abajo no sé dónde ponerlo... por ahí no haga falta esta lista 
+      y directamente nos manejemos con los menúes de foto 
+      <ul>
+
+      <li><a href="Identificador_de_plantas.html"> Identificador de plantas</a></li>
       <li><a href="Houston_problemas_plantas.html"> Houston, tenemos un problema? </a></li>
       <li><a href="links_utiles.html">Links útiles </a></li>
     </ul> -->
-   
-  </body>
-  </html>
+
+ 
+</body>
+</html>
+<!--  en css 
+    *{
+margin: 0;
+padding: 0;
+} para cuando queremos borrar lo que por defecto nos hace el navegador de estilo -->
