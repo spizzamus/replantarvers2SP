@@ -34,7 +34,7 @@ header{
     text-align: right;
     background-color:#274427a6;
     padding: 8px;
-    position: fixed;
+    position: relative;
     left: 0;
     top: 0;
     right: 0;
@@ -83,6 +83,7 @@ footer, .footer{
     margin-top: auto;
 }
 .logo{
+    
     float: left;  
     width: 180px;
     height: 50px; 
