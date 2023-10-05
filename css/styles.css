@@ -86,11 +86,7 @@ header{
     display:flex;
     flex-direction: column;
  }
-.logo{
-        float: left;  /*esto me pone el logo a la izq*/
-        width: 180px; 
-        height: 50px; 
- }
+
  /*ACÁ comienzan estilos para el index*/
  .subtitulo_arriba_imagen{
     display:inline-flex;
