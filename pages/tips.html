@@ -17,9 +17,33 @@
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Nanum+Gothic&display=swap');
-        
-        
-        .flex{
+       
+        .parrafo-tips{
+                    font-family: 'Montserrat', sans-serif;
+                    text-align: center;
+                    font-size: 18px;
+                } 
+                .parrafo-consejos{
+                    font-family: 'Montserrat', sans-serif;
+                    text-align: justify;
+                    font-size: 18px;
+                    margin-right: 5rem;
+                }
+                .h2consejos{
+                font-family: 'Julius Sans One', sans-serif;
+                font-size: 40px;
+                text-align: center;
+                margin: 5rem;
+                
+            }
+            .encabezadoTips{
+            display: grid;
+            grid-template-columns: auto auto;
+            column-gap: 6rem;
+            justify-content: center;
+            }
+
+                .flex{
             display: inline-flex;
             justify-content:center ;
             background-color: rgba(134, 96, 50, 0.782);
@@ -27,22 +51,16 @@
             align-items: center;
             padding:2rem;
         }
-       
-
-        
-        div.gallery {
+               
+                div.gallery {
                 border: 1px solid #ccc;
                 }
 
-                div.gallery:hover {
-                border: 1px solid #777;
-                }
-
+                
                 div.gallery img {
                 width: 100%;
                 height: auto;
                 }
-
         
                 * {
                 box-sizing: border-box;
@@ -51,7 +69,7 @@
                 .responsive {
                 padding: 6px;
                 float:left;
-                width: 32%;
+                width: 33%;
                 }
 
                     @media only screen and (max-width: 700px) {
@@ -71,10 +89,11 @@
                     content: "";
                     display: table;
                     clear: both;}
+                                
+            
         
-            </style>
+         </style>
         
-    </style>
 
     <header>
         <script src="https://kit.fontawesome.com/3b21fc997b.js" crossorigin="anonymous"></script>
@@ -88,39 +107,7 @@
     </ul>
     </header>
 
-    <body>
-<main>
-        
-    
-        <div class="encabezado2">
-            
-        </div>
-        <h2 class="h2-quienessomos">Compartinos tu tip para aprender juntos!</h2>
-        <p class="parrafo-nosotras">Dejanos tu comentario aquí para compartir a la comunidad todos esos tips que te siriveron para tu jardín o balcón!</p>
-        
-        <div class="flex">
-            
-            <form action="sofiapizzamus@gmail.com">
-                <label for="inputNombre">Nombre:</label>
-                <br>
-                <input type="text" id="inputNombre">
-                <br>
-                <label for="inputApellido">Apellido:</label>
-                <br>
-                <input type="text" id="inputApellido">
-                <br>
-                <label for="textAreaMensaje">Contanos cuál es tu tip</label>
-                <br>
-                <textarea name="textAreaMensaje" id="" cols="30" rows="10"></textarea>
-                <br>
-                <input type="submit" value="Enviar comentarios..">
-                <input type="reset" value="Borrar todo..">
-                
-            </form>
-            <div>
-                <img src="../img/caterpillar-5810616_1280.jpg" class="imagenNosotras" alt="imgTips">
-            </div>  
-        </div>
+    <body>                      
         <!-- ADENTRO DE STYLE           div.gallery {
                 display: grid;
                 grid-template-columns: auto auto auto auto;
@@ -138,80 +125,137 @@
             div.gallery img {
               width: 100%;
               height: auto;
-            }
-        -->
+            }-->
                                   
-      
-           
-            <body>
-                <h2 class="h2-quienessomos">Ustedes</h2>
+            <body>  
+                <main>          
+                <h2 class="h2consejos">Compartinos tu tip para aprender juntos!</h2>
+                <p class="parrafo-tips">Dejanos tu comentario aquí para compartir a la comunidad todos esos tips que te siriveron para tu jardín o balcón!</p>
             
-                <div class="responsive">
-                <div class="gallery">
-                <a target="_blank" href="../img/1.jpg">
-                    <img src="../img/1.jpg" alt="DiegoTandil" width="600" height="400">
-                </a>
-            </div>
-                </div>
-                
-                <div class="responsive">
-                    <div class="gallery">
-                <a target="_blank" href="../img/2.jpg">
-                    <img src="../img/2.jpg" alt="ElenaCordoba" width="600" height="400">
-                </a>
-                </div>
-                </div>
-               
-                <div class="responsive"> 
-                <div class="gallery">
-                <a target="_blank" href="../img/3.jpg">
-                    <img src="../img/3.jpg" alt="JazminOlavarria" width="600" height="400">
-                </a>
-                </div>
-                </div>
-                
-                <div class="responsive">
-                <div class="gallery">
-                <a target="_blank" href="../img/4.jpg">
-                    <img src="../img/4.jpg" alt="Mountains" width="600" height="400">
-                </a>
-                </div>
-                </div>
-                
-                <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank" href="../img/5.jpg">
-                    <img src="../img/5.jpg" alt="Mountains" width="600" height="400">
-                    </a>
-                </div>
-                </div>
+                <div class="encabezadoTips">
 
-                <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank" href="../img/6.jpg">
-                    <img src="../img/6.jpg" alt="Isabel - La Plata" width="600" height="400">
-                    </a>
-                </div>
-                </div>
+                    <div class="flex">
+                    
+                        <form action="sofiapizzamus@gmail.com">
+                            <label for="inputNombre">Nombre:</label>
+                            <br>
+                            <input type="text" id="inputNombre">
+                            <br>
+                            <label for="inputApellido">Apellido:</label>
+                            <br>
+                            <input type="text" id="inputApellido">
+                            <br>
+                            <label for="textAreaMensaje">Contanos cuál es tu tip</label>
+                            <br>
+                            <textarea name="textAreaMensaje" id="" cols="30" rows="10"></textarea>
+                            <br>
+                            <input type="submit" value="Enviar comentarios..">
+                            <input type="reset" value="Borrar todo..">
+                        </form>
 
-                <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank" href="../img/7.jpg">
-                    <img src="../img/7.jpg" alt="Mountains" width="600" height="400">
-                    </a>
-                </div>
-                </div>
-
-                <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank" href="../img/8.jpg">
-                    <img src="../img/8.jpg" alt="Mountains" width="600" height="400">
-                    </a>
                     </div>
+
+                        <div class="imagenTips">
+                            <img src="../img/caterpillar-5810616_1280.jpg" width="600"
+                            height="400" alt="imgTips">
+                        </div> 
                 </div>
-            </div>
+            </main>
+                <div class="encabezadoTips">
+                            
+                    <h2 class="h2consejos">Te damos algunos consejos</h2>
+
+                        <p class="parrafo-consejos"> <br>
+                            <b>Conoce a tus plantas:</b> Cada planta es única. Antes de comprar o cuidar una planta, investiga sus necesidades específicas de luz, agua y temperatura. Escucha las experiencias de otros jardineros y aprende de sus éxitos y errores.
+                            <br> <br>
+                            <b>No temas podar:</b> La poda regular puede ser beneficiosa para muchas plantas. Escucha las historias de aquellos que han tenido éxito al podar sus plantas para promover un crecimiento saludable y evitar enfermedades.
+                            <br> <br>
+                            <b>Controla las plagas:</b> Las plagas pueden ser un problema común en las plantas. Escucha las recomendaciones de otros jardineros sobre cómo identificar y tratar plagas de manera efectiva.
+                            <br> <br>
+                            <b>Utiliza fertilizantes con moderación:</b> El exceso de fertilizante puede dañar las plantas. Aprende de las experiencias de personas que han encontrado el equilibrio adecuado entre alimentar sus plantas y evitar la sobrealimentación.
+                            <br> <br>
+                            <b>Aprende a regar correctamente:</b> El riego es una de las áreas más críticas del cuidado de las plantas. Escucha consejos sobre cómo regar según las necesidades de cada planta y cómo evitar el riego excesivo o insuficiente.
+                            <br> <br>
+                            <b>Elige macetas adecuadas:</b> Las macetas y contenedores incorrectos pueden afectar negativamente el crecimiento de las plantas. Aprende de las experiencias de quienes han seleccionado macetas que permiten un buen drenaje y espacio para el crecimiento de las raíces.
+                        </p>
+                </div>
+
+                <h2 class="h2consejos">Ustedes</h2>
             
-    </main>
+                    <div class="responsive">
+                            <div class="gallery">
+                            <a target="_blank" href="../img/1.jpg">
+                                <img src="../img/1.jpg" alt="DiegoTandil" width="600" height="400">
+                            </a>
+                            </div>
+                    </div>
+                
+                    <div class="responsive">
+                            <div class="gallery">
+                                <a target="_blank" href="../img/2.jpg">
+                                    <img src="../img/2.jpg" alt="ElenaCordoba" width="600" height="400">
+                                </a>
+                            </div>
+                    </div>
+                    
+                        <div class="responsive"> 
+                        <div class="gallery">
+                        <a target="_blank" href="../img/3.jpg">
+                            <img src="../img/3.jpg" alt="JazminOlavarria" width="600" height="400">
+                        </a>
+                        </div>
+                        </div>
+                        
+                        <div class="responsive">
+                        <div class="gallery">
+                        <a target="_blank" href="../img/4.jpg">
+                            <img src="../img/4.jpg" alt="Mountains" width="600" height="400">
+                        </a>
+                        </div>
+                        </div>
+                        
+                        <div class="responsive">
+                        <div class="gallery">
+                            <a target="_blank" href="../img/5.jpg">
+                            <img src="../img/5.jpg" alt="Mountains" width="600" height="400">
+                            </a>
+                        </div>
+                        </div>
+
+                        <div class="responsive">
+                        <div class="gallery">
+                            <a target="_blank" href="../img/6.jpg">
+                            <img src="../img/6.jpg" alt="Isabel - La Plata" width="600" height="400">
+                            </a>
+                        </div>
+                        </div>
+
+                        <div class="responsive">
+                        <div class="gallery">
+                            <a target="_blank" href="../img/7.jpg">
+                            <img src="../img/7.jpg" alt="Mountains" width="600" height="400">
+                            </a>
+                        </div>
+                        </div>
+
+                        <div class="responsive">
+                        <div class="gallery">
+                            <a target="_blank" href="../img/8.jpg">
+                            <img src="../img/8.jpg" alt="Mountains" width="600" height="400">
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="responsive">
+                        <div class="gallery">
+                        <a target="_blank" href="../img/9.jpg">
+                            <img src="../img/9.jpg" alt="CintiaCaba" width="600" height="400">
+                        </a>
+                    </div>
+                        </div>
+                    
+            
 
         <div class="flex">
             <p><a href="../index.html">Volver...</a></p>
