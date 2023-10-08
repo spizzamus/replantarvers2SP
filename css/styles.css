@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .grid-container{
     /* aca empieza */
     .header{ grid-area: header; }
@@ -32,20 +36,7 @@
     }
     /* aca termina el grid*/
 }
-header{
-    text-align: right;
-    background-color:#274427;
-    padding: 10px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
- }
-.logo{
-        float: left;  /*esto me pone el logo a la izq*/
-        width: 180px; 
-        height: 50px; 
- }
+
  /*ACÁ comienzan estilos para el index*/
  .subtitulo_arriba_imagen{
     display:inline-flex;
@@ -92,25 +83,46 @@ header{
     background-color:rgba(134, 96, 50, 0.782);
     padding:3rem;
 }/*ACÁ TERMINAN estilos para el index*/
+
 /*ESTO ES PARA EL HEADER, PARA LA BARRA DE NAVEGACIÓN CON LINKS*/
-li{
-    display: inline; /*p/ q los links estén en línea, en vez de uno debajo de otro*/
-}
-ul {
+.header{
+    display: flex;
+    background-color:#274427;
+    justify-content: space-between; /*esto me coloca los links a la derecha y el logo a la iz*/
+    align-items: center; 
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
     list-style-type: none;
+ }
+.header .logo img{
+        float: left;  /*esto me pone el logo a la izq*/
+        width: auto; 
+        height: 50px; 
+        transition: all 0.3s; /*es para el efecto del logo*/
+ }
+ .header .logo img:hover{
+    transform: scale(1.1);  /*le da un efecto al logo*/
+ }
+
+.header .navegacion li  {
+    display: inline-block;
+    text-align: center; 
+    padding: 0 5px;     
+}
+.header .navegacion li a{
     font-family: 'Montserrat', sans-serif; /*las podemos cambiar luego*/
-  }
-li a {
     color: #D4A373;
-    text-align: center;
     padding: 10px 10px;
     text-decoration: none;
 }
-li a:hover { /*esta clase es p/ q cuando le pasas el mouse por encima a los links se sombreen*/
-    background-color: #305a30a6;
+.navegacion li:hover { /*esta clase es p/ q cuando le pasas el mouse por encima a los links se sombreen*/
     color: white;
-    border-radius: 8px;
+    transform: scale(1.1);
 } /*acá termina barra de navegación*/
+
 /*ACÁ empiezan estilos para el body de "NOSOTRAS"*/
 .encabezado2{
     display: grid;
@@ -134,6 +146,7 @@ li a:hover { /*esta clase es p/ q cuando le pasas el mouse por encima a los link
 .imagenNosotras{
     width: 30rem;
 }/*ACÁ TERMINAN estilos para "NOSOTRAS"*/
+
 footer, .footer{ 
     background-color:black;
     color:white;
@@ -150,3 +163,333 @@ body{
     flex-direction: column;
     min-height: 100vh;
 }
+
+/*ESTILOS para la página "problemas" */
+.fotoproblemas{
+    background-image: url(../img/luz5.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    background-size: cover;
+}
+.fotoproblemas .logo{
+    display: flex;
+}
+.contenedorheader .logo img{
+    width: auto; 
+    height: 50px; 
+    transition: all 0.3s; /*es para el efecto del logo*/
+}
+.fotoproblemas .logo img:hover{
+transform: scale(1.1);  /*le da un efecto al logo*/
+}
+.fotoproblemas .contenedorheader{
+    display: flex;
+    right: 0;
+    left: 0;
+    top:0;
+    align-items: center;
+    background-color:#274427;
+    list-style-type: none; 
+    padding: 10px;
+    position: fixed;
+   justify-content: space-between;
+}
+.fotoproblemas .contenedorheader li{
+    display: inline-block;
+    text-align: center; 
+    padding: 0 5px;     
+}
+.fotoproblemas .contenedorheader li a{
+    font-family: 'Montserrat', sans-serif; 
+    color: #D4A373;
+    padding: 10px 10px;
+    text-decoration: none;   
+}
+.contenedorheader li:hover{
+    transform: scale(1.1);
+    color: white; /*sacar*/
+}
+
+/*body de problemas con la luz*/
+.conteiner_luz{
+    max-width: 1400px;
+    margin: auto;
+}
+#luzproblem .conteiner_luz{
+    text-align: center;
+    padding: 200px 12px;
+    font-family: 'Montserrat', sans-serif; 
+}
+#mucha_pocaluz .cajitas{
+    background-color: rgb(30, 30, 30);
+    background-size: cover;
+    background-position: center center;
+    padding: 70px;
+    margin: 30px 30px;
+    border-radius: 15px;
+    font-family:'Montserrat', sans-serif;
+}
+#mucha_pocaluz .conteiner_luz{
+    text-align: center;
+    padding: 100px 0px;
+}
+
+.cajitas:first-child{
+background-image: 
+url(../img/iluminada.jpg);
+color: black;
+}
+.cajitas:nth-child(2){
+    background-image: 
+    url(../img/plantasinluz.jpg);
+    color: white;
+}
+#mucha_pocaluz .cajitas button{
+    font-size: 1em;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-top: 30px;
+    background-color: rgba(128, 128, 128, 0.108);
+    color: white;
+    border: 2px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.154);
+}
+#mucha_pocaluz .cajitas button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+@media(min-width: 720px){/*esto significa que cuando el ancho de la 
+    pantalla supere los 720px se le van a aplicar los sig estilos*/
+#mucha_pocaluz .conteiner_luz{
+    display: flex;
+    margin: 10px 20px;
+}
+
+/*consejos de Contacto.html*/
+
+.conteiner_negro{
+    max-width: 1400px;
+    margin: auto;
+}
+#luzproblem .conteiner_negro{
+    text-align: center;
+    padding: 200px 12px;
+    font-family: 'Montserrat', sans-serif; 
+}
+#consejo .cajita{
+    background-color: rgb(30, 30, 30);
+    background-size: cover;
+    background-position: center center;
+    padding: 40px;
+    margin: 20px 20px;
+    border-radius: 15px;
+    font-family:'Montserrat', sans-serif;
+}
+#consejo .conteiner_negro{
+    text-align: center;
+    padding: 1px 0px;
+}
+
+.cajita:first-child{
+background-image: 
+url(../img/FONDO.jpg);
+color: white;
+}
+.cajita:nth-child(2){
+    background-image: 
+    url(../img/FONDO.jpg);
+    
+    color: white;
+}
+}
+.cajita:nth-child(3){
+    background-image: 
+    url(../img/FONDO.jpg);
+    color: white;
+}
+#consejo .cajita button{
+    font-size: 1em;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-top: 30px;
+    background-color: rgba(128, 128, 128, 0.108);
+    color: white;
+    border: 2px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.154);
+}
+#consejo .cajita button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+@media(min-width: 720px){/*esto significa que cuando el ancho de la 
+    pantalla supere los 720px se le van a aplicar los sig estilos*/
+#consejo .conteiner_negro{
+    display: flex;
+    margin: 10px 20px;
+}}
+/*fin de contactos*/
+
+/*Comienzo de tips y contactos*/
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Nanum+Gothic&display=swap');
+        
+            * {box-sizing: border-box; }
+
+            .parrafo-tips{
+                    font-family: 'Montserrat', sans-serif;
+                    text-align: center;
+                    font-size: 18px;
+                    margin-bottom: 30px;
+                    } 
+          
+            .h2consejos{
+                font-family: 'Julius Sans One', sans-serif;
+                font-size: 40px;
+                text-align: center;
+                margin: 5rem;
+                margin-right: 5rem;
+                padding-top: 6rem; 
+                }
+
+            .encabezadoTips{
+                display: grid;
+                grid-template-columns: auto auto;
+                justify-content: center;
+                }
+
+            
+          /*  .flex{
+                display: flex;
+                justify-content:center ;
+                background-color: rgba(134, 96, 50, 0.782);
+                align-items: center;
+                padding:2rem;
+                font-family: 'Montserrat', sans-serif;
+            }
+            */
+               
+            div.gallery {
+                border: 1px solid #ccc;
+                }
+
+            div.gallery img {
+                width: 100%;
+                height: auto;
+                }
+
+                .responsive {
+                padding: 6px;
+                float:left;
+                width: 33%;
+                }
+
+             @media only screen and (max-width: 700px) {
+            
+            .responsive {
+                        width: 49.99999%;
+                        margin: 15px 0;
+                    }
+                    }
+
+             @media only screen and (max-width: 500px) {
+            
+                .responsive {
+                        width: 100%;
+                    }
+                    }
+
+                .clearfix:after {
+                    content: "";
+                    display: table;
+                    clear: both;}
+                                
+                <<!--acá arranca el FORMULARIO-->
+
+                * {box-sizing: border-box;
+                    }
+
+                    input[type=text], select, textarea {
+                        width: 100%;
+                        padding: 12px;
+                        border: 1px solid #ccc;
+                        border-radius: 4px;
+                        resize: vertical;
+                        font-family: 'Montserrat', sans-serif;
+                    }
+
+                    label {
+                        padding: 12px 12px 12px 0;
+                        display: inline-block;
+                        font-family: 'Montserrat', sans-serif;
+                    }
+
+                    input[type=submit] {
+                        background-color: #274427;
+                        color: white;
+                        padding: 12px 20px;
+                        border: none;
+                        border-radius: 4px;
+                        cursor: pointer;
+                        float: right;
+                        font-family: 'Montserrat', sans-serif;
+                    }
+
+                    input[type=submit]:hover {
+                        background-color: #274427;
+                    }
+                    input[type=reset] {
+                        background-color: #274427;
+                        color: white;
+                        padding: 12px 20px;
+                        border: none;
+                        border-radius: 4px;
+                        cursor: pointer;
+                        float: right;
+                        font-family: 'Montserrat', sans-serif;
+                    }
+
+                    input[type=reset]:hover {
+                        background-color: #274427;
+                    }
+
+                    .formulario {
+                        border-radius: 5px;
+                        background-color: #f2f2f2;
+                        padding: 20px;
+                        font-family: 'Montserrat', sans-serif;
+                    }
+
+                    .col-25 {
+                        float: left;
+                        width: 25%;
+                        margin-top: 6px;
+                    }
+
+                    .col-75 {
+                        float: left;
+                        width: 75%;
+                        margin-top: 6px;
+                    }
+                    
+                    .row::after {
+                        content: "";
+                        display: table;
+                        clear: both;
+                    }
+
+                    /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+                    @media screen and (max-width: 600px)
+                        {
+                        .col-25, .col-75, input[type=submit] {
+                            width: 100%;
+                            margin-top: 0;
+                        }}
+    /*fin de tips*/
+
+
+/*prueba de estilos responsive mismo tamaño para todas las pag*/
+/*h1{font-size: 3.5 em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size:1em ;}*/
+/*acá termina la prueba*/
