@@ -6,7 +6,7 @@ vamos! vamos que podemos!
 
 Jose
 
-19/10 SPizzamus
+19/10 SPizzamus (Agrego Index2)
 IMG responsive en index. Agregué por debajo del título el siguiente código:
  <div class="gallery">
         <div class="responsive">
