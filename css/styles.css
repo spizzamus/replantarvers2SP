@@ -51,6 +51,7 @@
 
  /*ACÁ comienzan estilos para el index*/
 
+
  .subtitulo_arriba_imagen{
     display:inline-flex;
     color:rgb(12, 51, 38);
@@ -87,6 +88,7 @@
     background-color:beige;
     display:flex;
     flex-direction: column;
+
 }
 .descripcion{
     display:inline-block;
@@ -151,20 +153,24 @@
     font-family: 'Julius Sans One', sans-serif;
     font-size: 40px;
 
+
     text-align: center;
     margin-right: 5rem;
     padding-top: 6rem;
 }
 .parrafo-nosotras{
+
     font-family: 'Montserrat', sans-serif;
     text-align: justify;
     font-size: 18px;
     margin-right: 5rem;
 
+
 } 
 .imagenNosotras{
     width: 30rem;
 }/*ACÁ TERMINAN estilos para "NOSOTRAS"*/
+
 
 
 footer, .footer{ 
