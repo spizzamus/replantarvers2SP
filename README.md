@@ -1,4 +1,8 @@
 # replantarvers2
+Hola Profe, acá tenemos nuestro repo. En él encontrarás el index desde el cual se puede acceder a todo el sitio. Te dejamos acá el vínculo: 
+
+
+
 se va la segunda
 chicas subí este archivo mucho más simple para poder inicializarlo de nuevo y no pisarnos con los styles. 
 Puse cosas SUPER BÁSICAS, si les parece acordemos entre todas (o que una se encargue) de revisar el estilo de cada sección y vamos trabajando sobre el mismo estilo.
