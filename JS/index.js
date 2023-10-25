@@ -4,3 +4,8 @@ console.log("Hola! Vamos a identificar la familia vegetal a la que pertenece tu 
 
 //var myCarousel = document.querySelector('#myCarousel')
 //var carousel = new bootstrap.Carousel(myCarousel) INTENTO DE CARROUSEL
+
+//FORMULARIO Y TIPS
+
+
+
