@@ -1,4 +1,5 @@
 
+
 19/10 SPizzamus (Agrego Index2)
 IMG responsive en index. Agregué por debajo del título el siguiente código:
  <div class="gallery">
